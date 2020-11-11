@@ -40,5 +40,27 @@ gitignore   忽略指定文件
 
 移动并修改文件名
     git mv 旧文件名 文件夹/新文件名
-    
 
+查看文件信息：
+    git log ==pretty=oneline <filename.filetype>    查看具体提交的内容和提交者
+    >> id   说明
+    git show id     查看
+
+    git log -p <filename.filetype>  查看某个文件修改的具体内容
+
+不再追踪：
+    git reset HEAD <filename.filetype>
+
+一键还原：
+    git diff        找到文件不同处
+    git checkout -- <filename.filetype>
+
+回到上一版本或者指定版本时：
+    git reset --hard HEAD^      回到上一版本
+
+    git reset --hard HEAD^^     回到上两个版本
+
+    git reset --hard id         回到id的版本
+
+将某一文件回到指定版本
+    git checkout 版本id -- <filename.filetype>
