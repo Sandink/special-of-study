@@ -1,0 +1,44 @@
+gitignore   忽略指定文件
+
+配置用户名和邮箱：
+    git config --global user.name 'xxxx'    配置用户名
+    git config --global user.email 'xxxxx'  配置邮箱
+    git config --global --list              查看用户名与邮箱
+
+通用流程：
+    git init            初始化
+
+    git add .           提交至暂存区
+
+    git commit -m 说明  将暂存区代码提交到GitHub当中去
+
+    git remote add origin https://github.com/XXXX
+
+    git pull origin master
+
+    git push origin master
+
+操作记录：
+    git status          查看当前项目状态
+    git log             查看提交记录
+            --anthor='name'     查看单个人提交记录
+
+修改文件：
+    git add 具体修改的文件名
+    (git status  查看状态)
+    git commit -m 修改文件
+    (it log   查看提交记录)
+
+删除文件：
+    git rm 文件名
+
+重命名文件：
+    git mv 旧文件名 新文件名
+
+移动文件
+    git mv 文件名 文件夹
+
+移动并修改文件名
+    git mv 旧文件名 文件夹/新文件名
+    
+
